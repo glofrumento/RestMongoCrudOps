@@ -34,9 +34,9 @@ public class ImpiegatoController {
   private final Logger logger = LoggerFactory.getLogger(this.getClass());
 
   /**
-   * Method to save employees in the db.
+   * Crea una lista di Impiegati nel db.
    * 
-   * @param emp
+   * @param imp
    * @return
    */
   // curl -X POST localhost:8083/mdbcrud/v1/crea -H "Content-Type: application/json" -d "[{\"id\":\"10\",\"nome\":\"Mario\",\"funzione\":\"Impiegato\"}]"
@@ -49,7 +49,7 @@ public class ImpiegatoController {
   }
 
   /**
-   * Method to fetch all employees from the db.
+   * Restituisce tutti gli impiegati.
    * 
    * @return
    */
@@ -61,7 +61,7 @@ public class ImpiegatoController {
   }
 
   /**
-   * Method to fetch employee by id.
+   * Restituisce un impiegato con un id.
    * 
    * @param id
    * @return
@@ -74,7 +74,7 @@ public class ImpiegatoController {
   }
 
   /**
-   * Method to update employee by id.
+   * Aggiorna un impiegato con un id.
    * 
    * @param id
    * @param e
@@ -90,7 +90,7 @@ public class ImpiegatoController {
   }
 
   /**
-   * Method to delete employee by id.
+   * Cancella un impiegato con un id dal db.
    * 
    * @param id
    * @return
@@ -104,7 +104,7 @@ public class ImpiegatoController {
   }
 
   /**
-   * Method to delete all employees from the db.
+   * Cancella tutti gli impiegati dal db.
    * 
    * @return
    */

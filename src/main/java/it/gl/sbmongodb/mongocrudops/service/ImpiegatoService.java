@@ -9,21 +9,21 @@ import it.gl.sbmongodb.mongocrudops.model.Impiegato;
 public interface ImpiegatoService {
 
   /**
-   * Method to create new employees in the db using mongo-db repository.
+   * Crea un nuovo Impiegao in Mongodb.
    * 
    * @param emp
    */
   public void createImpiegato(List<Impiegato> imp);
 
   /**
-   * Method to fetch all employees from the db using mongo-db repository.
+   * Carica tutti gli impiegati da Mongodb.
    * 
    * @return
    */
   public Collection<Impiegato> getAllImpiegati();
 
   /**
-   * Method to fetch employee by id using mongo-db repository.
+   * Carica un impiegato con id da mongodb.
    * 
    * @param id
    * @return
@@ -31,14 +31,14 @@ public interface ImpiegatoService {
   public Optional<Impiegato> findImpiegatoById(int id);
 
   /**
-   * Method to delete employee by id using mongo-db repository.
+   * Cancella un impiegato con id da mongodb.
    * 
    * @param id
    */
   public void deleteImpiegatoById(int id);
 
   /**
-   * Method to update employee by id using mongo-db repository.
+   * Aggiorna un impiegato con id da mongodb.
    * 
    * @param id
    */
