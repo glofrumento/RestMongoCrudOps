@@ -10,6 +10,6 @@ public class ImpiegatoController {
 
   @GetMapping(value = "/hello")
   public String getHello() {
-    return "Hello";
+    return "Ciao";
   }
 }
